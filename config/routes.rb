@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get("/lucky_numbers",   { :controller => "fortunes", :action => "lucky" })
   get("/unlucky_numbers", { :controller => "fortunes", :action => "unlucky" })
 
-  get("/random/:min/:max", { :controller => "fortunes", :action => "within_range" })
+  get("/:min/:max", { :controller => "fortunes", :action => "within_range" })
 
   # VARIABLE ROUTES
   # =======================
